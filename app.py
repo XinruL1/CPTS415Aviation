@@ -14,6 +14,10 @@ def airports():
 @app.route('/airlines')
 def airlines():
   return render_template('airlines.html')
+
+@app.route('/aggregation')
+def aggregation():
+  return render_template('aggregation.html')
   
 if __name__ == "__main__":
     app.run(host='0.0.0.0', debug=True)
