@@ -18,6 +18,10 @@ def airlines():
 @app.route('/aggregation')
 def aggregation():
   return render_template('aggregation.html')
+
+@app.route('/recommendation')
+def recommendation():
+  return render_template('recommendation.html')
   
 if __name__ == "__main__":
     app.run(host='0.0.0.0', debug=True)

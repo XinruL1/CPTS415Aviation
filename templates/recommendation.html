@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Search Airport - Aviation</title>
+  <title>Trip Recommendation - Aviation</title>
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -9,7 +9,7 @@
       padding: 0;
       display: flex;
       flex-direction: column;
-      
+
     }
 
     .header-container {
@@ -60,7 +60,7 @@
       font-style: italic;
       text-align: center;
     }
-    
+
     .search-container {
       display: flex;                 
       flex-direction: column;
@@ -71,7 +71,7 @@
       font-size: 30px;
       margin-top: 30px;
       margin-bottom: 50px;
-      
+
     }
 
     .input-row {
@@ -124,76 +124,120 @@
       margin-left: 70px;
       text-align: left;
     }
-    
-    .image-content {
+
+    .image-container {
       display: flex;
-      justify-content: center;
-      padding: 20px;
-     
+      justify-content: space-between;
+      align-items: stretch;
+      margin-top: 10px;
+      padding: 10px;
+    }
+
+    .vertical-container {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 0;
+      padding: 0 5px; 
+    }
+
+    .vertical-container img {
+      max-width: 100%;
+      max-height: 98.5%;
+      border-radius: 5px;
       
     }
-    
-    .image-content img{
-      width: 24%;
-      height: auto;
-      border-radius: 10px;
-      margin-left: 10px;
+
+    .horizontal-container {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 0;
+      padding: 0 5px; 
+    }
+
+    .horizontal-container img {
+      max-width: 100%;
+      max-height: 50%;
+      margin-bottom: 5px;
+      border-radius: 5px;
+      
     }
 
     p {
       text-align: center;
     }
-
   </style>
 </head>
 <body>
 
   <div class="header-container">
     <h1>Aviation</h1>
-    
+
     <div class="buttons">
       <a href="/" button class="button">Home</a>
       <a href="/airports" class="button">Airport Search</a>
       <a href="/airlines" class="button">Airline Search</a>
       <a href="/aggregation" class="button">Airline Aggregation</a>
-      <a href="/recommendation" class="button">Trip Recommendation</a>
+      <a href="/recoomendation" class="button">Trip Recommendation</a>
     </div>
   </div>
-  
-  <header>Find Airports with Aviation</header>
-  
-  <p class = "bodytext">Discover airports in any country!</p>
-  
+
+  <header>Book your flight with Aviation</header>
+
+  <p class = "bodytext">1,480,086 airports around the world are waiting for you!</p>
+
   <div class="search-container">
-    <h2 class="search-header">Search for Airport Information</h2>
+    <h2 class="search-header">Search for Flight Information</h2>
     <div class="input-row">
       <div class="input-box">
-        <label for="airport-location">Airport Location:</label>
+        <label for="airport-location">Location:</label>
         <input type="text" id="airport-location" name="airport-location">
       </div>
       <div class="input-box">
-        <label for="iata-code">IATA Code:</label>
-        <input type="text" id="iata-code" name="iata-code">
+        <label for="check-in">Check-In:</label>
+        <input type="text" id="check-in" name="check-in">
       </div>
       <div class="input-box">
-        <label for="icao-code">ICAO Code:</label>
-        <input type="text" id="icao-code" name="icao-code">
+        <label for="check-out">check-out:</label>
+        <input type="text" id="check-out" name="check-out">
       </div>
       <div class="input-box">
-        <label for="airport-name">Airport Name:</label>
-        <input type="text" id="airport-name" name="airport-name">
+        <label for="stops">Stops:</label>
+        <input type="text" id="stops" name="stops">
       </div>
     </div>
     <button class="go-button">Go</button>
   </div>
 
-  <h3>Top Airports</h3>
+  <h3>Popular Destinations</h3>
 
-  <div class="image-content">
-      <img src="https://cpts415aviation.xinruli1.repl.co/static/OHareAirport.jpg" alt="Image">
-      <img src="https://cpts415aviation.xinruli1.repl.co/static/LondonAirport.jpg" alt="Image">
-      <img src="https://cpts415aviation.xinruli1.repl.co/static/SingaporeAirport.jpg" alt="Image">
-      <img src="https://cpts415aviation.xinruli1.repl.co/static/QatarAirport.jpg" alt="Image">
+  <div class="image-container">
+    <div class="vertical-container">
+      <img src="https://cpts415aviation.xinruli1.repl.co/static/Amsterdam.jpg">
+    </div>
+
+    <div class="vertical-container">
+      <div class="horizontal-container">
+        <img src="https://cpts415aviation.xinruli1.repl.co/static/Dubai.jpg">
+        <img src="https://cpts415aviation.xinruli1.repl.co/static/Barcelona.jpg">
+      </div>
+    </div>
+
+    <div class="vertical-container">
+      <img src="https://cpts415aviation.xinruli1.repl.co/static/Tokyo.jpg">
+    </div>
+
+    <div class="vertical-container">
+      <div class="horizontal-container">
+        <img src="https://cpts415aviation.xinruli1.repl.co/static/Maldives.jpg">
+        <img src="https://cpts415aviation.xinruli1.repl.co/static/Rome.jpg">
+      </div>
+    </div>
+
   </div>
 
   <p>Copyright 2023, TEX</p>
