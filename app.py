@@ -11,5 +11,9 @@ def index():
 def airports():
     return render_template('airports.html')
 
+@app.route('/airlines')
+def airlines():
+  return render_template('airlines.html')
+  
 if __name__ == "__main__":
     app.run(host='0.0.0.0', debug=True)
