@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Airlines List - Aviation</title>
+        <link rel="stylesheet" type="text/css" href="static/styles.css"/>
+    </head>
+    <body>
+        <div class="header-container">
+            <h1>Aviation</h1>
+            
+            <div class="buttons">
+              <a href="/" button class="button">Home</a>
+              <a href="/airports" class="button">Airport Search</a>
+              <a href="/airlines" class="button">Airline Search</a>
+              <a href="/aggregation" class="button">Airline Aggregation</a>
+              <a href="/recommendation" class="button">Trip Recommendation</a>
+            </div>
+        </div>
+
+        <div class = "airport-info">
+            <header class="sub-header">Airline Information</header>
+            {% if airlines %}
+            <table>
+                <thead>
+                    <tr>
+                        <th>Airline Name</th>
+                        <th>Alias</th>
+                        <th>IATA Code</th>
+                        <th>ICAO Code</th>
+                        <th>Collsign</th>
+                        <th>Country</th>
+                        <th>Avtive</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for airline in airlines %}
+                        <tr>
+                            <td>{{ airline.Name}}</td>
+                            <td>{{ airline.Alias}}</td>
+                            <td>{{ airline.IATA}}</td>
+                            <td>{{ airline.ICAO}}</td>
+                            <td>{{ airline.Collsign}}</td>
+                            <td>{{ airline.Country}}</td>
+                            <td>{{ airline.Active}}</td>
+                        </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+            {% else %}
+                <p class="message">No airline has been found with the given information.</p>
+            {% endif %}
+            </div>
+    </body>
+</html>

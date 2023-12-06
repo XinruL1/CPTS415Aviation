@@ -6,6 +6,7 @@ app = Flask(__name__)
 client = MongoClient('localhost', 27017)
 db = client.Aviation
 airports_collection = db.Airports
+airlines_collection = db.Airlines
 
 @app.route('/')
 def index():
@@ -53,5 +54,29 @@ def search_airports():
   airport_data = list(airports_collection.find(query))
   return render_template('airportsinfo.html',airports = airport_data)
   
+@app.route('/search_airlines', methods=['GET','POST'])
+def search_airlines():
+  query = {}
+
+  country = request.args.get('country')
+  iata = request.args.get('iata-code')
+  icao = request.args.get('icao-code')
+  name = request.args.get('airline-name')
+  codeshare = request.args.get('codeshare')
+
+  query = {
+    "Country": country,
+    "IATA": iata,
+    "ICAO": icao,
+    "Name": name,
+    "Active": codeshare
+  }
+  #drop keys with empty values
+  query = {key:value for key, value in query.items() if value}
+
+  #perform the query on the collection
+  airline_data = list(airlines_collection.find(query))
+  return render_template('airlinesinfo.html',airlines = airline_data)
+
 if __name__ == "__main__":
     app.run(host='0.0.0.0', debug=True)

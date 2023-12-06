@@ -24,33 +24,31 @@
 
   <div class="search-container">
     <h2 class="search-header">Search for airline Information</h2>
-    <div class="input-row">
-      <div class="input-box">
-        <label for="airline-country">Country</label>
-        <input type="text" id="airline-country" name="airline-country">
+    <form action="/search_airlines", method="GET">
+      <div class="input-row">
+        <div class="input-box">
+          <label for="country">Country</label>
+          <input type="text" id="country" name="country">
+        </div>
+        <div class="input-box">
+          <label for="iata-code">IATA Code:</label>
+          <input type="text" id="iata-code" name="iata-code">
+        </div>
+        <div class="input-box">
+          <label for="icao-code">ICAO Code:</label>
+          <input type="text" id="icao-code" name="icao-code">
+        </div>
+        <div class="input-box">
+          <label for="name">Airline Name:</label>
+          <input type="text" id="name" name="name">
+        </div>
+        <div class="input-box">
+          <label for="codeshare">Code Share</label>
+          <input type="text" id="codeshare" name="codeshare">
+        </div>
       </div>
-      <div class="input-box">
-        <label for="iata-code">IATA Code:</label>
-        <input type="text" id="iata-code" name="iata-code">
-      </div>
-      <div class="input-box">
-        <label for="icao-code">ICAO Code:</label>
-        <input type="text" id="icao-code" name="icao-code">
-      </div>
-      <div class="input-box">
-        <label for="airline-name">Airline Name:</label>
-        <input type="text" id="airline-name" name="airline-name">
-      </div>
-      <div class="input-box">
-        <label for="stops">Stops</label>
-        <input type="text" id="stops" name="stops">
-      </div>
-      <div class="input-box">
-        <label for="codeshare">Code Share</label>
-        <input type="text" id="codeshare" name="codeshare">
-      </div>
-    </div>
-    <button class="go-button">Go</button>
+      <button type="submit" class="go-button">Go</button>
+    </form>
   </div>
 
   <h3>Top Airlines</h3>
