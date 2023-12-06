@@ -1,113 +1,11 @@
 <!DOCTYPE html>
 <html>
-  <head>
+<head>
     <title>Airline Aggregation - Aviation</title>
-    <style>
-      body {
-        
-        font-family: Arial, sans-serif;
-        margin: 0;
-        padding: 0;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-      }
+    <link rel="stylesheet" type="text/css" href="static/styles.css"/>
+</head>
 
-      .header-container {
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        background-color: #f0f0f0;
-        padding: 20px 0;
-       
-      }
-
-      h1 {
-        font-size: 50px;
-      }
- 
-      .buttons {
-        display: flex;
-        justify-content: space-around;
-        margin-bottom: 20px;
-      }
-
-      .button {
-        padding: 20px 30px;
-        background-color: #3498db;
-        color: white;
-        border: none;
-        border-radius: 5px;
-        cursor: pointer;
-        margin: 0 10px;
-        font-size: 20px;
-      }
-
-      .button:hover {
-        background-color: #2980b9;
-      }
-
-      .content {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        height: 85vh; /* Set the height to 100% of the viewport height */
-        width: 100%;
-        background-image: url('static/airportscreen.jpg');
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-color: #f0f0f0; /* Fallback color if images don't load */
-      }
-      
-
-      header {
-        margin: 40px;
-        font-size: 50px;
-        font-weight: bold;
-      }
-
-      .searchbar-button {
-        padding: 20px 35px; 
-        font-size: 25px; 
-        border: none;
-        border-radius: 8px;
-        background-color: #27ae60;
-        color: white;
-        cursor: pointer;
-        transition: background-color 0.3s ease;
-        margin-top: 30px;
-      }
-      
-      .searchbar-button:hover {
-        background-color: #219f56;
-      }
-
-      .image-content {
-        display: flex;
-        justify-content: center;
-        padding: 20px;
-
-
-      }
-
-      .image-content img{
-        width: 24%;
-        height: auto;
-        border-radius: 10px;
-        margin-left: 10px;
-      }
-
-      p {
-        position: absolute;
-        bottom: 5px;
-      }
-
-    </style>
-  </head>
-
-  <body>
+<body>
     
     <div class="header-container">
       <h1>Aviation</h1>
@@ -121,18 +19,18 @@
       </div>
     </div>
 
-    <div class="content">
+    <div class="aggre-content">
       
-      <header>Airline Aggregation</header>
+      <header class = "sub-header">Airline Aggregation</header>
 
     
       <button class = "searchbar-button">Countries/territories with the highest number of airports</button>
       <button class = "searchbar-button">Cities with the most incoming/outgoing airlines</button>
 
-      <p>Copyright 2023, TEX</p>
+      <p class = "copyright">Copyright 2023, TEX</p>
     </div>
 
     
     
-  </body>
+</body>
 </html>

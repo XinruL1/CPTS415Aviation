@@ -2,175 +2,7 @@
 <html>
 <head>
   <title>Trip Recommendation - Aviation</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      display: flex;
-      flex-direction: column;
-
-    }
-
-    .header-container {
-      width: 100%;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      background-color: #f0f0f0;
-      padding: 20px 0;
-      margin-bottom: 20px;
-    }
-
-    h1 {
-      font-size: 50px;
-    }
-
-    .buttons {
-      display: flex;
-      justify-content: space-around;
-      margin-bottom: 20px;
-    }
-
-    .button {
-      padding: 20px 30px;
-      background-color: #3498db;
-      color: white;
-      border: none;
-      border-radius: 5px;
-      cursor: pointer;
-      margin: 0 10px;
-      font-size: 20px;
-    }
-
-    .button:hover {
-      background-color: #2980b9;
-    }
-
-    header {
-      margin: 40px;
-      font-size: 50px;
-      font-weight: bold;
-      text-align: center;
-    }
-
-    .bodytext {
-      margin-top: 5px;
-      font-size: 25px;
-      font-style: italic;
-      text-align: center;
-    }
-
-    .search-container {
-      display: flex;                 
-      flex-direction: column;
-      align-items: center;
-    }
-
-    .search-header {
-      font-size: 30px;
-      margin-top: 30px;
-      margin-bottom: 50px;
-
-    }
-
-    .input-row {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 10px;
-      margin-bottom: 10px;
-    }
-
-    .input-box {
-      flex: 1;
-      display: flex;
-      flex-direction: column;
-      max-width: 300px;
-    }
-
-    .input-box label {
-      margin-top: 20px;
-      margin-bottom: 20px;
-      font-size: 20px;
-    }
-
-    .input-box input[type="text"] {
-      padding: 10px;
-      border-radius: 5px;
-      border: 1px solid #ccc;
-      width: 100%;
-    }
-
-    .go-button {
-      padding: 10px 20px;
-      background-color: #27ae60;
-      color: white;
-      border: none;
-      border-radius: 8px;
-      cursor: pointer;
-      font-size: 20px;
-      margin-top: 20px;
-    }
-
-    .go-button:hover {
-      background-color: #219f56;
-    }
-
-    h3 {
-      font-size: 20px;
-      margin-top: 30px;
-      margin-bottom: 20px;
-      margin-left: 70px;
-      text-align: left;
-    }
-
-    .image-container {
-      display: flex;
-      justify-content: space-between;
-      align-items: stretch;
-      margin-top: 10px;
-      padding: 10px;
-    }
-
-    .vertical-container {
-      flex: 1;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      align-items: center;
-      margin-bottom: 0;
-      padding: 0 5px; 
-    }
-
-    .vertical-container img {
-      max-width: 100%;
-      max-height: 98.5%;
-      border-radius: 5px;
-      
-    }
-
-    .horizontal-container {
-      flex: 1;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      margin-bottom: 0;
-      padding: 0 5px; 
-    }
-
-    .horizontal-container img {
-      max-width: 100%;
-      max-height: 50%;
-      margin-bottom: 5px;
-      border-radius: 5px;
-      
-    }
-
-    p {
-      text-align: center;
-    }
-  </style>
+  <link rel="stylesheet" type="text/css" href="static/styles.css"/>
 </head>
 <body>
 
@@ -186,9 +18,9 @@
     </div>
   </div>
 
-  <header>Book your flight with Aviation</header>
+  <header class = "sub-header">Book your flight with Aviation</header>
 
-  <p class = "bodytext">1,480,086 airports around the world are waiting for you!</p>
+  <p class = "sub-bodytext">1,480,086 airports around the world are waiting for you!</p>
 
   <div class="search-container">
     <h2 class="search-header">Search for Flight Information</h2>
@@ -215,7 +47,7 @@
 
   <h3>Popular Destinations</h3>
 
-  <div class="image-container">
+  <div class="rec-image-container">
     <div class="vertical-container">
       <img src="https://cpts415aviation.xinruli1.repl.co/static/Amsterdam.jpg">
     </div>

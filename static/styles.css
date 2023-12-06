@@ -1,0 +1,252 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.header-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f0f0f0;
+  padding: 20px 0;
+}
+
+h1 {
+  font-size: 50px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+
+.button {
+  padding: 20px 30px;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 0 10px;
+  font-size: 20px;
+}
+
+.button:hover {
+  background-color: #2980b9;
+}
+
+header {
+  margin: 60px;
+  font-size: 80px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.sub-header {
+    margin: 40px;
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.home-content {
+  display: flex;
+  flex-direction: row;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.home-text-content {
+  flex: 1;
+  padding: 20px;
+  text-align: left;
+}
+
+h2 {
+  font-size: 40px;
+}
+
+.home-bodytext {
+  font-size: 35px;
+  font-style: italic;
+  line-height: 2
+} 
+
+.home-image-content {
+  flex: 1;
+  padding: 20px;
+}
+
+.home-image-content img {
+  width: 100%;
+  height: auto;
+}
+
+.sub-bodytext {
+  margin-top: 5px;
+  font-size: 25px;
+  font-style: italic;
+  text-align: center;
+}
+
+.search-container {
+  display: flex;                 
+  flex-direction: column;
+  align-items: center;
+}
+
+.search-header {
+  font-size: 30px;
+  margin-top: 30px;
+  margin-bottom: 50px;
+
+}
+
+.input-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.input-box {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  max-width: 300px;
+}
+
+.input-box label {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 20px;
+}
+
+.input-box input[type="text"] {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  width: 100%;
+}
+
+.go-button {
+  padding: 10px 20px;
+  background-color: #27ae60;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 20px;
+  margin-top: 20px;
+}
+
+.go-button:hover {
+  background-color: #219f56;
+}
+
+h3 {
+  font-size: 20px;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  margin-left: 70px;
+  text-align: left;
+}
+
+.sub-image-content {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+.sub-image-content img{
+  width: 24%;
+  height: auto;
+  border-radius: 10px;
+  margin-left: 10px;
+}
+
+.aggre-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 85vh; 
+  width: 100%;
+  background-image: url('airportscreen.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #f0f0f0;
+}
+
+.searchbar-button {
+  padding: 20px 35px; 
+  font-size: 25px; 
+  border: none;
+  border-radius: 8px;
+  background-color: #27ae60;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 30px;
+}
+
+.searchbar-button:hover {
+  background-color: #219f56;
+}
+
+.rec-image-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  margin-top: 10px;
+  padding: 10px;
+}
+
+.vertical-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0;
+  padding: 0 5px; 
+}
+
+.vertical-container img {
+  max-width: 100%;
+  max-height: 98.5%;
+  border-radius: 5px;
+
+}
+
+.horizontal-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 0;
+  padding: 0 5px; 
+}
+
+.horizontal-container img {
+  max-width: 100%;
+  max-height: 50%;
+  margin-bottom: 5px;
+  border-radius: 5px;
+
+}
+
+p {
+  text-align: center;
+}
+
+.copyright {
+    position: absolute;
+    bottom: 5px;
+}

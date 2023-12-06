@@ -2,149 +2,7 @@
 <html>
 <head>
   <title>Search Airport - Aviation</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      display: flex;
-      flex-direction: column;
-      
-    }
-
-    .header-container {
-      width: 100%;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      background-color: #f0f0f0;
-      padding: 20px 0;
-      margin-bottom: 20px;
-    }
-
-    h1 {
-      font-size: 50px;
-    }
-
-    .buttons {
-      display: flex;
-      justify-content: space-around;
-      margin-bottom: 20px;
-    }
-
-    .button {
-      padding: 20px 30px;
-      background-color: #3498db;
-      color: white;
-      border: none;
-      border-radius: 5px;
-      cursor: pointer;
-      margin: 0 10px;
-      font-size: 20px;
-    }
-
-    .button:hover {
-      background-color: #2980b9;
-    }
-
-    header {
-      margin: 40px;
-      font-size: 50px;
-      font-weight: bold;
-      text-align: center;
-    }
-
-    .bodytext {
-      margin-top: 5px;
-      font-size: 25px;
-      font-style: italic;
-      text-align: center;
-    }
-    
-    .search-container {
-      display: flex;                 
-      flex-direction: column;
-      align-items: center;
-    }
-
-    .search-header {
-      font-size: 30px;
-      margin-top: 30px;
-      margin-bottom: 50px;
-      
-    }
-
-    .input-row {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 10px;
-      margin-bottom: 10px;
-    }
-
-    .input-box {
-      flex: 1;
-      display: flex;
-      flex-direction: column;
-      max-width: 300px;
-    }
-
-    .input-box label {
-      margin-top: 20px;
-      margin-bottom: 20px;
-      font-size: 20px;
-    }
-
-    .input-box input[type="text"] {
-      padding: 10px;
-      border-radius: 5px;
-      border: 1px solid #ccc;
-      width: 100%;
-    }
-
-    .go-button {
-      padding: 10px 20px;
-      background-color: #27ae60;
-      color: white;
-      border: none;
-      border-radius: 8px;
-      cursor: pointer;
-      font-size: 20px;
-      margin-top: 20px;
-    }
-
-    .go-button:hover {
-      background-color: #219f56;
-    }
-
-    h3 {
-      font-size: 20px;
-      margin-top: 30px;
-      margin-bottom: 20px;
-      margin-left: 70px;
-      text-align: left;
-    }
-    
-    .image-content {
-      display: flex;
-      justify-content: center;
-      padding: 20px;
-     
-      
-    }
-    
-    .image-content img{
-      width: 24%;
-      height: auto;
-      border-radius: 10px;
-      margin-left: 10px;
-    }
-
-    p {
-      text-align: center;
-    }
-
-  </style>
+  <link rel="stylesheet" type="text/css" href="static/styles.css"/>
 </head>
 <body>
 
@@ -160,9 +18,9 @@
     </div>
   </div>
   
-  <header>Find Airports with Aviation</header>
+  <header class = "sub-header">Find Airports with Aviation</header>
   
-  <p class = "bodytext">Discover airports in any country!</p>
+  <p class = "sub-bodytext">Discover airports in any country!</p>
   
   <div class="search-container">
     <h2 class="search-header">Search for Airport Information</h2>
@@ -189,7 +47,7 @@
 
   <h3>Top Airports</h3>
 
-  <div class="image-content">
+  <div class="sub-image-content">
       <img src="https://cpts415aviation.xinruli1.repl.co/static/OHareAirport.jpg" alt="Image">
       <img src="https://cpts415aviation.xinruli1.repl.co/static/LondonAirport.jpg" alt="Image">
       <img src="https://cpts415aviation.xinruli1.repl.co/static/SingaporeAirport.jpg" alt="Image">
