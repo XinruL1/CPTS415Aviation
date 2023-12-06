@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Airports List - Aviation</title>
+        <link rel="stylesheet" type="text/css" href="static/styles.css"/>
+    </head>
+    <body>
+        <div class="header-container">
+            <h1>Aviation</h1>
+            
+            <div class="buttons">
+              <a href="/" button class="button">Home</a>
+              <a href="/airports" class="button">Airport Search</a>
+              <a href="/airlines" class="button">Airline Search</a>
+              <a href="/aggregation" class="button">Airline Aggregation</a>
+              <a href="/recommendation" class="button">Trip Recommendation</a>
+            </div>
+        </div>
+
+        <div class = "airport-info">
+            <header class="sub-header">Airport Information</header>
+            {% if airports %}
+            <table>
+                <thead>
+                    <tr>
+                        <th>Airport Name</th>
+                        <th>City</th>
+                        <th>Country</th>
+                        <th>IATA Code</th>
+                        <th>ICAO Code</th>
+                        <th>Latitude</th>
+                        <th>Longitude</th>
+                        <th>Altitude</th>
+                        <th>Timezone</th>
+                        <th>DST</th>
+                        <th>Tz database timezone</th>
+                        <th>Type</th>
+                        <th>Source</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for airport in airports %}
+                        <tr>
+                            <td>{{ airport.Name}}</td>
+                            <td>{{ airport.City}}</td>
+                            <td>{{ airport.Country}}</td>
+                            <td>{{ airport.IATA}}</td>
+                            <td>{{ airport.ICAO}}</td>
+                            <td>{{ airport.Latitude}}</td>
+                            <td>{{ airport.Longitude}}</td>
+                            <td>{{ airport.Altitude}}</td>
+                            <td>{{ airport.Timezone}}</td>
+                            <td>{{ airport.DST}}</td>
+                            <td>{{ airport.Tz_database_Timezone}}</td>
+                            <td>{{ airport.Type}}</td>
+                            <td>{{ airport.Source}}</td>
+                        </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+            {% else %}
+                <p class="message">No airport has been found with the given information.</p>
+            {% endif %}
+            </div>
+    </body>
+</html>

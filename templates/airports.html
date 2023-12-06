@@ -24,25 +24,31 @@
   
   <div class="search-container">
     <h2 class="search-header">Search for Airport Information</h2>
-    <div class="input-row">
-      <div class="input-box">
-        <label for="airport-location">Airport Location:</label>
-        <input type="text" id="airport-location" name="airport-location">
-      </div>
-      <div class="input-box">
-        <label for="iata-code">IATA Code:</label>
-        <input type="text" id="iata-code" name="iata-code">
-      </div>
-      <div class="input-box">
-        <label for="icao-code">ICAO Code:</label>
-        <input type="text" id="icao-code" name="icao-code">
-      </div>
-      <div class="input-box">
-        <label for="airport-name">Airport Name:</label>
-        <input type="text" id="airport-name" name="airport-name">
-      </div>
-    </div>
-    <button class="go-button">Go</button>
+      <form action = "/search_airports", method="GET">
+        <div class="input-row">
+          <div class="input-box">
+            <label for="country">Country:</label>
+            <input type="text" id="country" name="country">
+          </div>
+          <div class="input-box">
+            <label for="city">City:</label>
+            <input type="text" id="city" name="city">
+          </div>
+          <div class="input-box">
+            <label for="iata-code">IATA Code:</label>
+            <input type="text" id="iata-code" name="iata-code">
+          </div>
+          <div class="input-box">
+            <label for="icao-code">ICAO Code:</label>
+            <input type="text" id="icao-code" name="icao-code">
+          </div>
+          <div class="input-box">
+            <label for="airport-name">Airport Name:</label>
+            <input type="text" id="airport-name" name="airport-name">
+          </div>
+        </div>
+        <button type="submit" class="go-button">Go</button>
+      </form>
   </div>
 
   <h3>Top Airports</h3>
