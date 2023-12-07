@@ -21,11 +21,14 @@
 
     <div class="aggre-content">
 
-        <header class="sub-header">Airline Aggregation</header>
+        <header class="sub-header">Airline Aggregation Result</header>
 
-        <a href="{{ url_for('top_countries_airports') }}" class="searchbar-button">Countries/territories with the highest number of airports</a>
-        <a href="{{ url_for('cities_most_airlines') }}" class="searchbar-button">Cities with the most incoming/outgoing airlines</a>
-        
+        <ul>
+            {% for item in result %}
+                <li>{{ item._id }}: {{ item.count }}</li>
+            {% endfor %}
+        </ul>
+
         <p class="copyright">Copyright 2023, TEX</p>
     </div>
 
