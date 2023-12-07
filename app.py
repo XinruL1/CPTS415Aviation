@@ -7,6 +7,7 @@ client = MongoClient('localhost', 27017)
 db = client.Aviation
 airports_collection = db.Airports
 airlines_collection = db.Airlines
+routes_collection = db.routes
 
 @app.route('/')
 def index():
@@ -77,6 +78,72 @@ def search_airlines():
   #perform the query on the collection
   airline_data = list(airlines_collection.find(query))
   return render_template('airlinesinfo.html',airlines = airline_data)
+
+@app.route('/search_trip', methods=["GET","POST"])
+def search_trip():
+  source_country = request.args.get('source-country')
+  source_city = request.args.get('source-city')
+  source_airport = request.args.get('source-airport')
+  destination_country = request.args.get('destination-country')
+  destination_city = request.args.get('destination-city')
+  destination_airport = request.args.get('destination-airport')
+  airline_name = request.args.get('airline-name')
+  stops = request.args.get('stops')
+
+  pipline = [
+    {
+      "$lookup": {
+        "from": "Airports",
+        "localField": "Source_AirportID",
+        "foreignField": "AirportID",
+        "as": "source_airport_info"
+      }
+    },
+    {
+      "$unwind": "$source_airport_info"
+    },
+    {
+      "$lookup": {
+        "from": "Airports",
+        "localField": "Destination_AirportID",
+        "foreignField": "AirportID",
+        "as": "destination_airport_info"
+      }
+    },
+    {
+      "$unwind":"$destination_airport_info"
+    },
+    {
+      "$lookup": {
+        "from": "Airlines",
+        "localField": "AirlineID",
+        "foreignField": "AirlineID",
+        "as": "airline_info"
+      }
+    },
+    {
+      "$unwind": "$airline_info"
+    },
+    {
+      "$project":{
+        "SourceAirportCountry": "$source_airport_info.Country",
+        "SourceAirportCity": "$source_airport_info.city",
+        "SourceAirportName": "$source_airport_info.Name",
+        "DestinationAirportCountry": "$destination_airport_info.Country",
+        "DestinationAirportCity": "$destination_airport_info.City",
+        "DestinationAirportName": "$destination_airport_info.Name",
+        "AirlineName": "$airline_info.Name"
+      }
+    },
+    {
+      "$match": {
+        "Stops":stops
+      }
+    }
+  ]
+  routes_data = list(routes_collection.aggregate(pipline))
+
+  return render_template('tripinfo.html',trips = routes)
 
 if __name__ == "__main__":
     app.run(host='0.0.0.0', debug=True)
