@@ -25,38 +25,9 @@ def airlines():
 def aggregation():
     return render_template('aggregation.html')
 
-@app.route('/top_countries_airports', methods=['GET'])
-def top_countries_airports():
-    pipeline = [
-        {
-            '$group': {
-                '_id': '$Country',
-                'count': { '$sum': 1 }
-            }
-        },
-        { '$sort': { 'count': -1 } },
-        { '$limit': 5 }
-    ]
-
-    result = list(airports_collection.aggregate(pipeline, maxTimeMS=60000, allowDiskUse=True))
-    return render_template('aggregation_result.html', result=result, title='Countries with the highest number of airports')
-
-@app.route('/cities_most_airlines', methods=['GET'])
-def cities_most_airlines():
-    pipeline = [
-        {
-            '$group': {
-                '_id': '$City',
-                'count': { '$sum': 1 }
-            }
-        },
-        { '$sort': { 'count': -1 } },
-        { '$limit': 5 }
-    ]
-
-    result = list(airports_collection.aggregate(pipeline, maxTimeMS=60000, allowDiskUse=True))
-    return render_template('aggregation_result.html', result=result, title='Cities with the most incoming/outgoing airlines')
-
+@app.route('/recommendation', methods=['GET'])
+def recommendation():
+    return render_template('recommendation.html')
 
 @app.route('/search_airports', methods=['GET','POST'])
 def search_airports():
@@ -107,6 +78,38 @@ def search_airlines():
     #perform the query on the collection
     airline_data = list(airlines_collection.find(query))
     return render_template('airlinesinfo.html', airlines=airline_data)
+
+@app.route('/top_countries_airports', methods=['GET'])
+def top_countries_airports():
+    pipeline = [
+        {
+            '$group': {
+                '_id': '$Country',
+                'count': { '$sum': 1 }
+            }
+        },
+        { '$sort': { 'count': -1 } },
+        { '$limit': 5 }
+    ]
+
+    result = list(airports_collection.aggregate(pipeline, maxTimeMS=60000, allowDiskUse=True))
+    return render_template('aggregation_result.html', result=result, title='Countries with the highest number of airports')
+
+@app.route('/cities_most_airlines', methods=['GET'])
+def cities_most_airlines():
+    pipeline = [
+        {
+            '$group': {
+                '_id': '$City',
+                'count': { '$sum': 1 }
+            }
+        },
+        { '$sort': { 'count': -1 } },
+        { '$limit': 5 }
+    ]
+
+    result = list(airports_collection.aggregate(pipeline, maxTimeMS=60000, allowDiskUse=True))
+    return render_template('aggregation_result.html', result=result, title='Cities with the most incoming/outgoing airlines')
 
 @app.route('/search_trip', methods=["GET","POST"])
 def search_trip():
