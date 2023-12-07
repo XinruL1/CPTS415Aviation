@@ -14,69 +14,98 @@ def index():
 
 @app.route('/airports')
 def airports():
-  return render_template('airports.html')
+    return render_template('airports.html')
 
 @app.route('/airlines')
 def airlines():
-  return render_template('airlines.html')
+    return render_template('airlines.html')
 
-@app.route('/aggregation')
+@app.route('/aggregation', methods=['GET'])
 def aggregation():
-  return render_template('aggregation.html')
+    return render_template('aggregation.html')
 
-@app.route('/recommendation')
-def recommendation():
-  return render_template('recommendation.html')
+@app.route('/top_countries_airports', methods=['GET'])
+def top_countries_airports():
+    pipeline = [
+        {
+            '$group': {
+                '_id': '$Country',
+                'count': { '$sum': 1 }
+            }
+        },
+        { '$sort': { 'count': -1 } },
+        { '$limit': 5 }
+    ]
+
+    result = list(airports_collection.aggregate(pipeline, maxTimeMS=60000, allowDiskUse=True))
+    return render_template('aggregation_result.html', result=result, title='Countries with the highest number of airports')
+
+@app.route('/cities_most_airlines', methods=['GET'])
+def cities_most_airlines():
+    pipeline = [
+        {
+            '$group': {
+                '_id': '$City',
+                'count': { '$sum': 1 }
+            }
+        },
+        { '$sort': { 'count': -1 } },
+        { '$limit': 5 }
+    ]
+
+    result = list(airports_collection.aggregate(pipeline, maxTimeMS=60000, allowDiskUse=True))
+    return render_template('aggregation_result.html', result=result, title='Cities with the most incoming/outgoing airlines')
+
 
 @app.route('/search_airports', methods=['GET','POST'])
 def search_airports():
-  query = {}
+    query = {}
 
-  #read user inputs
-  country = request.args.get('country')
-  city = request.args.get('city')
-  iata = request.args.get('iata-code')
-  icao = request.args.get('icao-code')
-  name = request.args.get('airport-name')
+    #read user inputs
+    country = request.args.get('country')
+    city = request.args.get('city')
+    iata = request.args.get('iata-code')
+    icao = request.args.get('icao-code')
+    name = request.args.get('airport-name')
 
-  #construct a query to filter based on all provided inputs
-  query = {
-    "Country": country,
-    "City": city,
-    "IATA": iata,
-    "ICAO": icao,
-    "Name": name
-  }
-  #drop keys with empty values
-  query = {key:value for key, value in query.items() if value}
+    #construct a query to filter based on all provided inputs
+    query = {
+        "Country": country,
+        "City": city,
+        "IATA": iata,
+        "ICAO": icao,
+        "Name": name
+    }
+    #drop keys with empty values
+    query = {key: value for key, value in query.items() if value}
 
-  #perform the query on the collection
-  airport_data = list(airports_collection.find(query))
-  return render_template('airportsinfo.html',airports = airport_data)
-  
+    #perform the query on the collection
+    airport_data = list(airports_collection.find(query))
+    return render_template('airportsinfo.html', airports=airport_data)
+
 @app.route('/search_airlines', methods=['GET','POST'])
 def search_airlines():
-  query = {}
+    query = {}
 
-  country = request.args.get('country')
-  iata = request.args.get('iata-code')
-  icao = request.args.get('icao-code')
-  name = request.args.get('airline-name')
-  codeshare = request.args.get('codeshare')
+    country = request.args.get('country')
+    iata = request.args.get('iata-code')
+    icao = request.args.get('icao-code')
+    name = request.args.get('airline-name')
+    codeshare = request.args.get('codeshare')
 
-  query = {
-    "Country": country,
-    "IATA": iata,
-    "ICAO": icao,
-    "Name": name,
-    "Active": codeshare
-  }
-  #drop keys with empty values
-  query = {key:value for key, value in query.items() if value}
+    query = {
+        "Country": country,
+        "IATA": iata,
+        "ICAO": icao,
+        "Name": name,
+        "Active": codeshare
+    }
+    #drop keys with empty values
+    query = {key: value for key, value in query.items() if value}
 
-  #perform the query on the collection
-  airline_data = list(airlines_collection.find(query))
-  return render_template('airlinesinfo.html',airlines = airline_data)
+    #perform the query on the collection
+    airline_data = list(airlines_collection.find(query))
+    return render_template('airlinesinfo.html', airlines=airline_data)
 
 if __name__ == "__main__":
     app.run(host='0.0.0.0', debug=True)
