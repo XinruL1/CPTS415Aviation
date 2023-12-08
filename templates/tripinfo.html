@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Airlines List - Aviation</title>
+        <title>Trip Information- Aviation</title>
         <link rel="stylesheet" type="text/css" href="static/styles.css"/>
     </head>
     <body>
@@ -18,36 +18,33 @@
         </div>
 
         <div class = "airport-info">
-            <header class="sub-header">Airline Information</header>
-            {% if airlines %}
+            <header class="sub-header">Trip Information</header>
+            {% if trips %}
             <table>
                 <thead>
                     <tr>
+                        <th>From Country</th>
+                        <th>City</th>
+                        <th>Airport</th>
+                        <th>To Country</th>
+                        <th>City</th>
+                        <th>Airport</th>
                         <th>Airline Name</th>
-                        <th>Alias</th>
-                        <th>IATA Code</th>
-                        <th>ICAO Code</th>
-                        <th>Callsign</th>
-                        <th>Country</th>
-                        <th>Avtive</th>
+                        <th>Stops</th>
                     </tr>
                 </thead>
                 <tbody>
-                    {% for airline in airlines %}
+                    {% for trip in trips %}
                         <tr>
-                            <td>{{ airline.Name}}</td>
-                            <td>{{ airline.Alias}}</td>
-                            <td>{{ airline.IATA}}</td>
-                            <td>{{ airline.ICAO}}</td>
-                            <td>{{ airline.Callsign}}</td>
-                            <td>{{ airline.Country}}</td>
-                            <td>{{ airline.Active}}</td>
+                          <td>{{trip.Source_Airport}}</td>
+                          <td>{{trip.Destination_Airport}}</td>
+                          <td>{{trip.AirlineID}}</td>
                         </tr>
                     {% endfor %}
                 </tbody>
             </table>
             {% else %}
-                <p class="message">No airline has been found with the given information.</p>
+                <p class="message">No trip has been found with the given information.</p>
             {% endif %}
             </div>
     </body>
