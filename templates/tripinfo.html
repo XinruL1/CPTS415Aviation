@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Trip Information- Aviation</title>
+        <title>Trip Information - Aviation</title>
         <link rel="stylesheet" type="text/css" href="static/styles.css"/>
     </head>
     <body>
@@ -31,19 +31,31 @@
                         <th>Airport</th>
                         <th>Airline Name</th>
                         <th>Stops</th>
+                        <th>Plane</th>
                     </tr>
                 </thead>
                 <tbody>
                     {% for trip in trips %}
                         <tr>
-                          <td>{{trip.SourceCountry}}</td>
+                          <td><a href="{{url_for('country_details', country=trip.SourceCountry)}}">{{trip.SourceCountry}}</a></td>
                           <td>{{trip.SourceCity}}</td>
-                          <td>{{trip.SourceAirport}}</td>
-                          <td>{{trip.DestinationCountry}}</td>
+                          <td><a href="{{url_for('airport_details', airport=trip.SourceAirport)}}">{{trip.SourceAirport}}</a></td>
+                          <td><a href="{{url_for('country_details', country=trip.DestinationCountry)}}">{{trip.DestinationCountry}}</a></td>
                           <td>{{trip.DestinationCity}}</td>
-                          <td>{{trip.DestinationAirport}}</td>
+                          <td><a href="{{url_for('airport_details', airport=trip.DestinationAirport)}}">{{trip.DestinationAirport}}</a></td>
                           <td>{{trip.AirlineName}}</td>
                           <td>{{trip.Stops}}</td>
+                          <td>
+                            {% if trip.Plane is string %}
+                                {% for number in trip.Plane.split() %}
+                                    <a href="{{ url_for('plane_details', plane=number) }}">{{ number }}</a>
+                                    {% if not loop.last %}, {% endif %}
+                                {% endfor %}
+                            {% else %}
+                                <a href="{{ url_for('plane_details', plane=trip.Plane) }}">{{ trip.Plane }}</a>
+                            {% endif %}
+                        </td>
+                        
                         </tr>
                     {% endfor %}
                 </tbody>

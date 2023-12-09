@@ -8,6 +8,8 @@ db = client.Aviation
 airports_collection = db.Airports
 airlines_collection = db.Airlines
 routes_collection = db.routes
+countries_collection = db.Countries
+planes_collection = db.planes
 
 @app.route('/')
 def index():
@@ -167,7 +169,8 @@ def search_trip():
         "DestinationCity": "$destinationAirport.City",
         "DestinationAirport": "$destinationAirport.Name",
         "AirlineName": "$airline.Name",
-        "Stops": "$Stops"
+        "Stops": "$Stops",
+        "Plane": "$Equipment"
     }},
     {"$match": query}
   ]
@@ -256,6 +259,24 @@ def search_trip():
   # Retrieve the results from the "trip_collection"
   routes_data = list(db.trip_collection.find())
 """
+
+@app.route('/country/<country>', methods=['GET'])
+def country_details(country):
+    query = {"Country_Name": country}
+    country_data = countries_collection.find_one(query)
+    return render_template('countrydetail.html', country=country_data)
+
+@app.route('/airport/<airport>', methods=['GET'])
+def airport_details(airport):
+    query = {"Name": airport}
+    airport_data = list(airports_collection.find(query))
+    return render_template('airportsinfo.html', airports=airport_data)
+
+@app.route('/plane/<plane>', methods=['GET'])
+def plane_details(plane):
+    query = {"IATA": plane}
+    plane_data = planes_collection.find_one(query)
+    return render_template('planeinfo.html', plane=plane_data)
 
 if __name__ == "__main__":
     app.run(host='0.0.0.0', debug=True)

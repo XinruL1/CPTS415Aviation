@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Country Detail - Aviation</title>
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+    </head>
+    <body>
+        <div class="header-container">
+            <h1>Aviation</h1>
+            
+            <div class="buttons">
+              <a href="/" button class="button">Home</a>
+              <a href="/airports" class="button">Airport Search</a>
+              <a href="/airlines" class="button">Airline Search</a>
+              <a href="/aggregation" class="button">Airline Aggregation</a>
+              <a href="/recommendation" class="button">Trip Recommendation</a>
+            </div>
+        </div>
+
+        <div class = "airport-info">
+            <header class="sub-header">Country Detail</header>
+            {% if country %}
+            <table>
+                <thead>
+                    <tr>
+                        <th>Country Name</th>
+                        <th>iso Code</th>
+                        <th>dafif Code</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>{{country.Country_Name}}</td>
+                        <td>{{country.iso_code}}</td>
+                        <td>{{country.dafif_code}}</td>
+                    </tr>
+                </tbody>
+            </table>
+            {% else %}
+                <p class="message">No country information has been found.</p>
+            {% endif %}
+        </div>
+    </body>
+</html>

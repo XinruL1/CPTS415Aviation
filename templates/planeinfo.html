@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Plane Detail - Aviation</title>
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+    </head>
+    <body>
+        <div class="header-container">
+            <h1>Aviation</h1>
+            
+            <div class="buttons">
+              <a href="/" button class="button">Home</a>
+              <a href="/airports" class="button">Airport Search</a>
+              <a href="/airlines" class="button">Airline Search</a>
+              <a href="/aggregation" class="button">Airline Aggregation</a>
+              <a href="/recommendation" class="button">Trip Recommendation</a>
+            </div>
+        </div>
+
+        <div class = "airport-info">
+            <header class="sub-header">Plane Detail</header>
+            {% if plane %}
+            <table>
+                <thead>
+                    <tr>
+                        <th>Plane Name</th>
+                        <th>IATA</th>
+                        <th>ICAO</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>{{plane.Plane_Name}}</td>
+                        <td>{{plane.IATA}}</td>
+                        <td>{{plane.ICAO}}</td>
+                    </tr>
+                </tbody>
+            </table>
+            {% else %}
+                <p class="message">No plane information has been found.</p>
+            {% endif %}
+        </div>
+    </body>
+</html>
