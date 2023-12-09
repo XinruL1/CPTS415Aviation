@@ -1,0 +1,1306 @@
+[
+ {
+  "Country_Name": "Bonaire, Saint Eustatius and Saba",
+  "iso_code": "BQ"
+ },
+ {
+  "Country_Name": "Aruba",
+  "iso_code": "AW",
+  "dafif_code": "AA"
+ },
+ {
+  "Country_Name": "Antigua and Barbuda",
+  "iso_code": "AG",
+  "dafif_code": "AC"
+ },
+ {
+  "Country_Name": "United Arab Emirates",
+  "iso_code": "AE",
+  "dafif_code": "AE"
+ },
+ {
+  "Country_Name": "Afghanistan",
+  "iso_code": "AF",
+  "dafif_code": "AF"
+ },
+ {
+  "Country_Name": "Algeria",
+  "iso_code": "DZ",
+  "dafif_code": "AG"
+ },
+ {
+  "Country_Name": "Azerbaijan",
+  "iso_code": "AZ",
+  "dafif_code": "AJ"
+ },
+ {
+  "Country_Name": "Albania",
+  "iso_code": "AL",
+  "dafif_code": "AL"
+ },
+ {
+  "Country_Name": "Armenia",
+  "iso_code": "AM",
+  "dafif_code": "AM"
+ },
+ {
+  "Country_Name": "Angola",
+  "iso_code": "AO",
+  "dafif_code": "AO"
+ },
+ {
+  "Country_Name": "American Samoa",
+  "iso_code": "AS",
+  "dafif_code": "AQ"
+ },
+ {
+  "Country_Name": "Argentina",
+  "iso_code": "AR",
+  "dafif_code": "AR"
+ },
+ {
+  "Country_Name": "Australia",
+  "iso_code": "AU",
+  "dafif_code": "AS"
+ },
+ {
+  "Country_Name": "Ashmore and Cartier Islands",
+  "iso_code": "\\N",
+  "dafif_code": "AT"
+ },
+ {
+  "Country_Name": "Austria",
+  "iso_code": "AT",
+  "dafif_code": "AU"
+ },
+ {
+  "Country_Name": "Anguilla",
+  "iso_code": "AI",
+  "dafif_code": "AV"
+ },
+ {
+  "Country_Name": "Antarctica",
+  "iso_code": "AQ",
+  "dafif_code": "AY"
+ },
+ {
+  "Country_Name": "Bahrain",
+  "iso_code": "BH",
+  "dafif_code": "BA"
+ },
+ {
+  "Country_Name": "Barbados",
+  "iso_code": "BB",
+  "dafif_code": "BB"
+ },
+ {
+  "Country_Name": "Botswana",
+  "iso_code": "BW",
+  "dafif_code": "BC"
+ },
+ {
+  "Country_Name": "Bermuda",
+  "iso_code": "BM",
+  "dafif_code": "BD"
+ },
+ {
+  "Country_Name": "Belgium",
+  "iso_code": "BE",
+  "dafif_code": "BE"
+ },
+ {
+  "Country_Name": "Bahamas",
+  "iso_code": "BS",
+  "dafif_code": "BF"
+ },
+ {
+  "Country_Name": "Bangladesh",
+  "iso_code": "BD",
+  "dafif_code": "BG"
+ },
+ {
+  "Country_Name": "Belize",
+  "iso_code": "BZ",
+  "dafif_code": "BH"
+ },
+ {
+  "Country_Name": "Bosnia and Herzegovina",
+  "iso_code": "BA",
+  "dafif_code": "BK"
+ },
+ {
+  "Country_Name": "Bolivia",
+  "iso_code": "BO",
+  "dafif_code": "BL"
+ },
+ {
+  "Country_Name": "Myanmar",
+  "iso_code": "MM",
+  "dafif_code": "BM"
+ },
+ {
+  "Country_Name": "Benin",
+  "iso_code": "BJ",
+  "dafif_code": "BN"
+ },
+ {
+  "Country_Name": "Belarus",
+  "iso_code": "BY",
+  "dafif_code": "BO"
+ },
+ {
+  "Country_Name": "Solomon Islands",
+  "iso_code": "SB",
+  "dafif_code": "BP"
+ },
+ {
+  "Country_Name": "Navassa Island",
+  "iso_code": "\\N",
+  "dafif_code": "BQ"
+ },
+ {
+  "Country_Name": "Brazil",
+  "iso_code": "BR",
+  "dafif_code": "BR"
+ },
+ {
+  "Country_Name": "India",
+  "iso_code": "IN",
+  "dafif_code": "BS"
+ },
+ {
+  "Country_Name": "Bhutan",
+  "iso_code": "BT",
+  "dafif_code": "BT"
+ },
+ {
+  "Country_Name": "Bulgaria",
+  "iso_code": "BG",
+  "dafif_code": "BU"
+ },
+ {
+  "Country_Name": "Bouvet Island",
+  "iso_code": "BV",
+  "dafif_code": "BV"
+ },
+ {
+  "Country_Name": "Brunei Darussalam",
+  "iso_code": "BN",
+  "dafif_code": "BX"
+ },
+ {
+  "Country_Name": "Burundi",
+  "iso_code": "BI",
+  "dafif_code": "BY"
+ },
+ {
+  "Country_Name": "Canada",
+  "iso_code": "CA",
+  "dafif_code": "CA"
+ },
+ {
+  "Country_Name": "Cambodia",
+  "iso_code": "KH",
+  "dafif_code": "CB"
+ },
+ {
+  "Country_Name": "Chad",
+  "iso_code": "TD",
+  "dafif_code": "CD"
+ },
+ {
+  "Country_Name": "Sri Lanka",
+  "iso_code": "LK",
+  "dafif_code": "CE"
+ },
+ {
+  "Country_Name": "DR Congo",
+  "iso_code": "CD",
+  "dafif_code": "CF"
+ },
+ {
+  "Country_Name": "Congo Republic",
+  "iso_code": "CG",
+  "dafif_code": "CG"
+ },
+ {
+  "Country_Name": "China",
+  "iso_code": "CN",
+  "dafif_code": "CH"
+ },
+ {
+  "Country_Name": "Chile",
+  "iso_code": "CL",
+  "dafif_code": "CI"
+ },
+ {
+  "Country_Name": "Cayman Islands",
+  "iso_code": "KY",
+  "dafif_code": "CJ"
+ },
+ {
+  "Country_Name": "Cocos (Keeling) Islands",
+  "iso_code": "CC",
+  "dafif_code": "CK"
+ },
+ {
+  "Country_Name": "Cameroon",
+  "iso_code": "CM",
+  "dafif_code": "CM"
+ },
+ {
+  "Country_Name": "Comoros",
+  "iso_code": "KM",
+  "dafif_code": "CN"
+ },
+ {
+  "Country_Name": "Colombia",
+  "iso_code": "CO",
+  "dafif_code": "CO"
+ },
+ {
+  "Country_Name": "Northern Mariana Islands",
+  "iso_code": "MP",
+  "dafif_code": "CQ"
+ },
+ {
+  "Country_Name": "Coral Sea Islands",
+  "iso_code": "\\N",
+  "dafif_code": "CR"
+ },
+ {
+  "Country_Name": "Costa Rica",
+  "iso_code": "CR",
+  "dafif_code": "CS"
+ },
+ {
+  "Country_Name": "Central African Republic",
+  "iso_code": "CF",
+  "dafif_code": "CT"
+ },
+ {
+  "Country_Name": "Cuba",
+  "iso_code": "CU",
+  "dafif_code": "CU"
+ },
+ {
+  "Country_Name": "Cabo Verde",
+  "iso_code": "CV",
+  "dafif_code": "CV"
+ },
+ {
+  "Country_Name": "Cook Islands",
+  "iso_code": "CK",
+  "dafif_code": "CW"
+ },
+ {
+  "Country_Name": "Cyprus",
+  "iso_code": "CY",
+  "dafif_code": "CY"
+ },
+ {
+  "Country_Name": "Denmark",
+  "iso_code": "DK",
+  "dafif_code": "DA"
+ },
+ {
+  "Country_Name": "Djibouti",
+  "iso_code": "DJ",
+  "dafif_code": "DJ"
+ },
+ {
+  "Country_Name": "Dominica",
+  "iso_code": "DM",
+  "dafif_code": "DO"
+ },
+ {
+  "Country_Name": "Jarvis Island",
+  "iso_code": "\\N",
+  "dafif_code": "DQ"
+ },
+ {
+  "Country_Name": "Dominican Republic",
+  "iso_code": "DO",
+  "dafif_code": "DR"
+ },
+ {
+  "Country_Name": "Ecuador",
+  "iso_code": "EC",
+  "dafif_code": "EC"
+ },
+ {
+  "Country_Name": "Egypt",
+  "iso_code": "EG",
+  "dafif_code": "EG"
+ },
+ {
+  "Country_Name": "Ireland",
+  "iso_code": "IE",
+  "dafif_code": "EI"
+ },
+ {
+  "Country_Name": "Equatorial Guinea",
+  "iso_code": "GQ",
+  "dafif_code": "EK"
+ },
+ {
+  "Country_Name": "Estonia",
+  "iso_code": "EE",
+  "dafif_code": "EN"
+ },
+ {
+  "Country_Name": "Eritrea",
+  "iso_code": "ER",
+  "dafif_code": "ER"
+ },
+ {
+  "Country_Name": "El Salvador",
+  "iso_code": "SV",
+  "dafif_code": "ES"
+ },
+ {
+  "Country_Name": "Ethiopia",
+  "iso_code": "ET",
+  "dafif_code": "ET"
+ },
+ {
+  "Country_Name": "Europa Island",
+  "iso_code": "\\N",
+  "dafif_code": "EU"
+ },
+ {
+  "Country_Name": "Czech Republic",
+  "iso_code": "CZ",
+  "dafif_code": "EZ"
+ },
+ {
+  "Country_Name": "French Guiana",
+  "iso_code": "GF",
+  "dafif_code": "FG"
+ },
+ {
+  "Country_Name": "Finland",
+  "iso_code": "FI",
+  "dafif_code": "FI"
+ },
+ {
+  "Country_Name": "Fiji",
+  "iso_code": "FJ",
+  "dafif_code": "FJ"
+ },
+ {
+  "Country_Name": "Falkland Islands",
+  "iso_code": "FK",
+  "dafif_code": "FK"
+ },
+ {
+  "Country_Name": "Micronesia, Fed. Sts.",
+  "iso_code": "FM",
+  "dafif_code": "FM"
+ },
+ {
+  "Country_Name": "Faeroe Islands",
+  "iso_code": "FO",
+  "dafif_code": "FO"
+ },
+ {
+  "Country_Name": "French Polynesia",
+  "iso_code": "PF",
+  "dafif_code": "FP"
+ },
+ {
+  "Country_Name": "Baker Island",
+  "iso_code": "\\N",
+  "dafif_code": "FQ"
+ },
+ {
+  "Country_Name": "France",
+  "iso_code": "FR",
+  "dafif_code": "FR"
+ },
+ {
+  "Country_Name": "French Southern Territories",
+  "iso_code": "TF",
+  "dafif_code": "FS"
+ },
+ {
+  "Country_Name": "Gambia",
+  "iso_code": "GM",
+  "dafif_code": "GA"
+ },
+ {
+  "Country_Name": "Gabon",
+  "iso_code": "GA",
+  "dafif_code": "GB"
+ },
+ {
+  "Country_Name": "Georgia",
+  "iso_code": "GE",
+  "dafif_code": "GG"
+ },
+ {
+  "Country_Name": "Ghana",
+  "iso_code": "GH",
+  "dafif_code": "GH"
+ },
+ {
+  "Country_Name": "Gibraltar",
+  "iso_code": "GI",
+  "dafif_code": "GI"
+ },
+ {
+  "Country_Name": "Grenada",
+  "iso_code": "GD",
+  "dafif_code": "GJ"
+ },
+ {
+  "Country_Name": "Guernsey",
+  "iso_code": "GG",
+  "dafif_code": "GK"
+ },
+ {
+  "Country_Name": "Greenland",
+  "iso_code": "GL",
+  "dafif_code": "GL"
+ },
+ {
+  "Country_Name": "Germany",
+  "iso_code": "DE",
+  "dafif_code": "GM"
+ },
+ {
+  "Country_Name": "Glorioso Islands",
+  "iso_code": "\\N",
+  "dafif_code": "GO"
+ },
+ {
+  "Country_Name": "Guadeloupe",
+  "iso_code": "GP",
+  "dafif_code": "GP"
+ },
+ {
+  "Country_Name": "Guam",
+  "iso_code": "GU",
+  "dafif_code": "GQ"
+ },
+ {
+  "Country_Name": "Greece",
+  "iso_code": "GR",
+  "dafif_code": "GR"
+ },
+ {
+  "Country_Name": "Guatemala",
+  "iso_code": "GT",
+  "dafif_code": "GT"
+ },
+ {
+  "Country_Name": "Guinea",
+  "iso_code": "GN",
+  "dafif_code": "GV"
+ },
+ {
+  "Country_Name": "Guyana",
+  "iso_code": "GY",
+  "dafif_code": "GY"
+ },
+ {
+  "Country_Name": "Palestine",
+  "iso_code": "PS",
+  "dafif_code": "GZ"
+ },
+ {
+  "Country_Name": "Haiti",
+  "iso_code": "HT",
+  "dafif_code": "HA"
+ },
+ {
+  "Country_Name": "Hong Kong",
+  "iso_code": "HK",
+  "dafif_code": "HK"
+ },
+ {
+  "Country_Name": "Heard and McDonald Islands",
+  "iso_code": "HM",
+  "dafif_code": "HM"
+ },
+ {
+  "Country_Name": "Honduras",
+  "iso_code": "HN",
+  "dafif_code": "HO"
+ },
+ {
+  "Country_Name": "Howland Island",
+  "iso_code": "\\N",
+  "dafif_code": "HQ"
+ },
+ {
+  "Country_Name": "Croatia",
+  "iso_code": "HR",
+  "dafif_code": "HR"
+ },
+ {
+  "Country_Name": "Hungary",
+  "iso_code": "HU",
+  "dafif_code": "HU"
+ },
+ {
+  "Country_Name": "Iceland",
+  "iso_code": "IS",
+  "dafif_code": "IC"
+ },
+ {
+  "Country_Name": "Indonesia",
+  "iso_code": "ID",
+  "dafif_code": "ID"
+ },
+ {
+  "Country_Name": "Isle of Man",
+  "iso_code": "IM",
+  "dafif_code": "IM"
+ },
+ {
+  "Country_Name": "India",
+  "iso_code": "IN",
+  "dafif_code": "IN"
+ },
+ {
+  "Country_Name": "British Indian Ocean Territory",
+  "iso_code": "IO",
+  "dafif_code": "IO"
+ },
+ {
+  "Country_Name": "Clipperton Island",
+  "iso_code": "\\N",
+  "dafif_code": "IP"
+ },
+ {
+  "Country_Name": "Iran",
+  "iso_code": "IR",
+  "dafif_code": "IR"
+ },
+ {
+  "Country_Name": "Israel",
+  "iso_code": "IL",
+  "dafif_code": "IS"
+ },
+ {
+  "Country_Name": "Italy",
+  "iso_code": "IT",
+  "dafif_code": "IT"
+ },
+ {
+  "Country_Name": "Cote d'Ivoire",
+  "iso_code": "CI",
+  "dafif_code": "IV"
+ },
+ {
+  "Country_Name": "Iraq",
+  "iso_code": "IQ",
+  "dafif_code": "IZ"
+ },
+ {
+  "Country_Name": "Japan",
+  "iso_code": "JP",
+  "dafif_code": "JA"
+ },
+ {
+  "Country_Name": "Jersey",
+  "iso_code": "JE",
+  "dafif_code": "JE"
+ },
+ {
+  "Country_Name": "Jamaica",
+  "iso_code": "JM",
+  "dafif_code": "JM"
+ },
+ {
+  "Country_Name": "Jan Mayen",
+  "iso_code": "\\N",
+  "dafif_code": "JN"
+ },
+ {
+  "Country_Name": "Jordan",
+  "iso_code": "JO",
+  "dafif_code": "JO"
+ },
+ {
+  "Country_Name": "Johnston Atoll",
+  "iso_code": "\\N",
+  "dafif_code": "JQ"
+ },
+ {
+  "Country_Name": "Juan de Nova Island",
+  "iso_code": "\\N",
+  "dafif_code": "JU"
+ },
+ {
+  "Country_Name": "Kenya",
+  "iso_code": "KE",
+  "dafif_code": "KE"
+ },
+ {
+  "Country_Name": "Kyrgyz Republic",
+  "iso_code": "KG",
+  "dafif_code": "KG"
+ },
+ {
+  "Country_Name": "North Korea",
+  "iso_code": "KP",
+  "dafif_code": "KN"
+ },
+ {
+  "Country_Name": "Kingman Reef",
+  "iso_code": "\\N",
+  "dafif_code": "KQ"
+ },
+ {
+  "Country_Name": "Kiribati",
+  "iso_code": "KI",
+  "dafif_code": "KR"
+ },
+ {
+  "Country_Name": "South Korea",
+  "iso_code": "KR",
+  "dafif_code": "KS"
+ },
+ {
+  "Country_Name": "Christmas Island",
+  "iso_code": "CX",
+  "dafif_code": "KT"
+ },
+ {
+  "Country_Name": "Kuwait",
+  "iso_code": "KW",
+  "dafif_code": "KU"
+ },
+ {
+  "Country_Name": "Kazakhstan",
+  "iso_code": "KZ",
+  "dafif_code": "KZ"
+ },
+ {
+  "Country_Name": "Laos",
+  "iso_code": "LA",
+  "dafif_code": "LA"
+ },
+ {
+  "Country_Name": "Lebanon",
+  "iso_code": "LB",
+  "dafif_code": "LE"
+ },
+ {
+  "Country_Name": "Latvia",
+  "iso_code": "LV",
+  "dafif_code": "LG"
+ },
+ {
+  "Country_Name": "Lithuania",
+  "iso_code": "LT",
+  "dafif_code": "LH"
+ },
+ {
+  "Country_Name": "Liberia",
+  "iso_code": "LR",
+  "dafif_code": "LI"
+ },
+ {
+  "Country_Name": "Slovakia",
+  "iso_code": "SK",
+  "dafif_code": "LO"
+ },
+ {
+  "Country_Name": "Palmyra Atoll",
+  "iso_code": "\\N",
+  "dafif_code": "LQ"
+ },
+ {
+  "Country_Name": "Lesotho",
+  "iso_code": "LS",
+  "dafif_code": "LT"
+ },
+ {
+  "Country_Name": "Luxembourg",
+  "iso_code": "LU",
+  "dafif_code": "LU"
+ },
+ {
+  "Country_Name": "Libya",
+  "iso_code": "LY",
+  "dafif_code": "LY"
+ },
+ {
+  "Country_Name": "Madagascar",
+  "iso_code": "MG",
+  "dafif_code": "MA"
+ },
+ {
+  "Country_Name": "Martinique",
+  "iso_code": "MQ",
+  "dafif_code": "MB"
+ },
+ {
+  "Country_Name": "Macao",
+  "iso_code": "MO",
+  "dafif_code": "MC"
+ },
+ {
+  "Country_Name": "Moldova",
+  "iso_code": "MD",
+  "dafif_code": "MD"
+ },
+ {
+  "Country_Name": "Mayotte",
+  "iso_code": "YT",
+  "dafif_code": "MF"
+ },
+ {
+  "Country_Name": "Mongolia",
+  "iso_code": "MN",
+  "dafif_code": "MG"
+ },
+ {
+  "Country_Name": "Montserrat",
+  "iso_code": "MS",
+  "dafif_code": "MH"
+ },
+ {
+  "Country_Name": "Malawi",
+  "iso_code": "MW",
+  "dafif_code": "MI"
+ },
+ {
+  "Country_Name": "Montenegro",
+  "iso_code": "ME",
+  "dafif_code": "MJ"
+ },
+ {
+  "Country_Name": "Macedonia",
+  "iso_code": "MK",
+  "dafif_code": "MK"
+ },
+ {
+  "Country_Name": "Mali",
+  "iso_code": "ML",
+  "dafif_code": "ML"
+ },
+ {
+  "Country_Name": "Monaco",
+  "iso_code": "MC",
+  "dafif_code": "MN"
+ },
+ {
+  "Country_Name": "Morocco",
+  "iso_code": "MA",
+  "dafif_code": "MO"
+ },
+ {
+  "Country_Name": "Mauritius",
+  "iso_code": "MU",
+  "dafif_code": "MP"
+ },
+ {
+  "Country_Name": "Midway Islands",
+  "iso_code": "\\N",
+  "dafif_code": "MQ"
+ },
+ {
+  "Country_Name": "Mauritania",
+  "iso_code": "MR",
+  "dafif_code": "MR"
+ },
+ {
+  "Country_Name": "Malta",
+  "iso_code": "MT",
+  "dafif_code": "MT"
+ },
+ {
+  "Country_Name": "Oman",
+  "iso_code": "OM",
+  "dafif_code": "MU"
+ },
+ {
+  "Country_Name": "Maldives",
+  "iso_code": "MV",
+  "dafif_code": "MV"
+ },
+ {
+  "Country_Name": "Mexico",
+  "iso_code": "MX",
+  "dafif_code": "MX"
+ },
+ {
+  "Country_Name": "Malaysia",
+  "iso_code": "MY",
+  "dafif_code": "MY"
+ },
+ {
+  "Country_Name": "Mozambique",
+  "iso_code": "MZ",
+  "dafif_code": "MZ"
+ },
+ {
+  "Country_Name": "New Caledonia",
+  "iso_code": "NC",
+  "dafif_code": "NC"
+ },
+ {
+  "Country_Name": "Niue",
+  "iso_code": "NU",
+  "dafif_code": "NE"
+ },
+ {
+  "Country_Name": "Norfolk Island",
+  "iso_code": "NF",
+  "dafif_code": "NF"
+ },
+ {
+  "Country_Name": "Niger",
+  "iso_code": "NE",
+  "dafif_code": "NG"
+ },
+ {
+  "Country_Name": "Vanuatu",
+  "iso_code": "VU",
+  "dafif_code": "NH"
+ },
+ {
+  "Country_Name": "Nigeria",
+  "iso_code": "NG",
+  "dafif_code": "NI"
+ },
+ {
+  "Country_Name": "Netherlands",
+  "iso_code": "NL",
+  "dafif_code": "NL"
+ },
+ {
+  "Country_Name": "Norway",
+  "iso_code": "NO",
+  "dafif_code": "NO"
+ },
+ {
+  "Country_Name": "Nepal",
+  "iso_code": "NP",
+  "dafif_code": "NP"
+ },
+ {
+  "Country_Name": "Nauru",
+  "iso_code": "NR",
+  "dafif_code": "NR"
+ },
+ {
+  "Country_Name": "Suriname",
+  "iso_code": "SR",
+  "dafif_code": "NS"
+ },
+ {
+  "Country_Name": "Netherlands Antilles",
+  "iso_code": "AN",
+  "dafif_code": "NT"
+ },
+ {
+  "Country_Name": "Nicaragua",
+  "iso_code": "NI",
+  "dafif_code": "NU"
+ },
+ {
+  "Country_Name": "New Zealand",
+  "iso_code": "NZ",
+  "dafif_code": "NZ"
+ },
+ {
+  "Country_Name": "Paraguay",
+  "iso_code": "PY",
+  "dafif_code": "PA"
+ },
+ {
+  "Country_Name": "Pitcairn",
+  "iso_code": "PN",
+  "dafif_code": "PC"
+ },
+ {
+  "Country_Name": "Peru",
+  "iso_code": "PE",
+  "dafif_code": "PE"
+ },
+ {
+  "Country_Name": "Paracel Islands",
+  "iso_code": "\\N",
+  "dafif_code": "PF"
+ },
+ {
+  "Country_Name": "Spratly Islands",
+  "iso_code": "\\N",
+  "dafif_code": "PG"
+ },
+ {
+  "Country_Name": "Pakistan",
+  "iso_code": "PK",
+  "dafif_code": "PK"
+ },
+ {
+  "Country_Name": "Poland",
+  "iso_code": "PL",
+  "dafif_code": "PL"
+ },
+ {
+  "Country_Name": "Panama",
+  "iso_code": "PA",
+  "dafif_code": "PM"
+ },
+ {
+  "Country_Name": "Portugal",
+  "iso_code": "PT",
+  "dafif_code": "PO"
+ },
+ {
+  "Country_Name": "Papua New Guinea",
+  "iso_code": "PG",
+  "dafif_code": "PP"
+ },
+ {
+  "Country_Name": "Palau",
+  "iso_code": "PW",
+  "dafif_code": "PS"
+ },
+ {
+  "Country_Name": "Guinea-Bissau",
+  "iso_code": "GW",
+  "dafif_code": "PU"
+ },
+ {
+  "Country_Name": "Qatar",
+  "iso_code": "QA",
+  "dafif_code": "QA"
+ },
+ {
+  "Country_Name": "Serbia",
+  "iso_code": "RS",
+  "dafif_code": "RB"
+ },
+ {
+  "Country_Name": "Reunion",
+  "iso_code": "RE",
+  "dafif_code": "RE"
+ },
+ {
+  "Country_Name": "Marshall Islands",
+  "iso_code": "MH",
+  "dafif_code": "RM"
+ },
+ {
+  "Country_Name": "Romania",
+  "iso_code": "RO",
+  "dafif_code": "RO"
+ },
+ {
+  "Country_Name": "Philippines",
+  "iso_code": "PH",
+  "dafif_code": "RP"
+ },
+ {
+  "Country_Name": "Puerto Rico",
+  "iso_code": "PR",
+  "dafif_code": "RQ"
+ },
+ {
+  "Country_Name": "Russia",
+  "iso_code": "RU",
+  "dafif_code": "RS"
+ },
+ {
+  "Country_Name": "Rwanda",
+  "iso_code": "RW",
+  "dafif_code": "RW"
+ },
+ {
+  "Country_Name": "Saudi Arabia",
+  "iso_code": "SA",
+  "dafif_code": "SA"
+ },
+ {
+  "Country_Name": "St. Pierre and Miquelon",
+  "iso_code": "PM",
+  "dafif_code": "SB"
+ },
+ {
+  "Country_Name": "St. Kitts and Nevis",
+  "iso_code": "KN",
+  "dafif_code": "SC"
+ },
+ {
+  "Country_Name": "Seychelles",
+  "iso_code": "SC",
+  "dafif_code": "SE"
+ },
+ {
+  "Country_Name": "South Africa",
+  "iso_code": "ZA",
+  "dafif_code": "SF"
+ },
+ {
+  "Country_Name": "Senegal",
+  "iso_code": "SN",
+  "dafif_code": "SG"
+ },
+ {
+  "Country_Name": "St. Helena",
+  "iso_code": "SH",
+  "dafif_code": "SH"
+ },
+ {
+  "Country_Name": "Slovenia",
+  "iso_code": "SI",
+  "dafif_code": "SI"
+ },
+ {
+  "Country_Name": "Sierra Leone",
+  "iso_code": "SL",
+  "dafif_code": "SL"
+ },
+ {
+  "Country_Name": "Singapore",
+  "iso_code": "SG",
+  "dafif_code": "SN"
+ },
+ {
+  "Country_Name": "Somalia",
+  "iso_code": "SO",
+  "dafif_code": "SO"
+ },
+ {
+  "Country_Name": "Spain",
+  "iso_code": "ES",
+  "dafif_code": "SP"
+ },
+ {
+  "Country_Name": "South Sudan",
+  "iso_code": "SS",
+  "dafif_code": "SS"
+ },
+ {
+  "Country_Name": "St. Lucia",
+  "iso_code": "LC",
+  "dafif_code": "ST"
+ },
+ {
+  "Country_Name": "Sudan",
+  "iso_code": "SD",
+  "dafif_code": "SU"
+ },
+ {
+  "Country_Name": "Svalbard and Jan Mayen Islands",
+  "iso_code": "SJ",
+  "dafif_code": "SV"
+ },
+ {
+  "Country_Name": "Sweden",
+  "iso_code": "SE",
+  "dafif_code": "SW"
+ },
+ {
+  "Country_Name": "South Georgia and South Sandwich Is.",
+  "iso_code": "GS",
+  "dafif_code": "SX"
+ },
+ {
+  "Country_Name": "Syria",
+  "iso_code": "SY",
+  "dafif_code": "SY"
+ },
+ {
+  "Country_Name": "Switzerland",
+  "iso_code": "CH",
+  "dafif_code": "SZ"
+ },
+ {
+  "Country_Name": "Trinidad and Tobago",
+  "iso_code": "TT",
+  "dafif_code": "TD"
+ },
+ {
+  "Country_Name": "Tromelin Island",
+  "iso_code": "\\N",
+  "dafif_code": "TE"
+ },
+ {
+  "Country_Name": "Thailand",
+  "iso_code": "TH",
+  "dafif_code": "TH"
+ },
+ {
+  "Country_Name": "Tajikistan",
+  "iso_code": "TJ",
+  "dafif_code": "TI"
+ },
+ {
+  "Country_Name": "Turks and Caicos Islands",
+  "iso_code": "TC",
+  "dafif_code": "TK"
+ },
+ {
+  "Country_Name": "Tokelau",
+  "iso_code": "TK",
+  "dafif_code": "TL"
+ },
+ {
+  "Country_Name": "Tonga",
+  "iso_code": "TO",
+  "dafif_code": "TN"
+ },
+ {
+  "Country_Name": "Togo",
+  "iso_code": "TG",
+  "dafif_code": "TO"
+ },
+ {
+  "Country_Name": "Sao Tome and Principe",
+  "iso_code": "ST",
+  "dafif_code": "TP"
+ },
+ {
+  "Country_Name": "Tunisia",
+  "iso_code": "TN",
+  "dafif_code": "TS"
+ },
+ {
+  "Country_Name": "Timor-Leste",
+  "iso_code": "TL",
+  "dafif_code": "TT"
+ },
+ {
+  "Country_Name": "Turkey",
+  "iso_code": "TR",
+  "dafif_code": "TU"
+ },
+ {
+  "Country_Name": "Tuvalu",
+  "iso_code": "TV",
+  "dafif_code": "TV"
+ },
+ {
+  "Country_Name": "Taiwan",
+  "iso_code": "TW",
+  "dafif_code": "TW"
+ },
+ {
+  "Country_Name": "Turkmenistan",
+  "iso_code": "TM",
+  "dafif_code": "TX"
+ },
+ {
+  "Country_Name": "Tanzania",
+  "iso_code": "TZ",
+  "dafif_code": "TZ"
+ },
+ {
+  "Country_Name": "Uganda",
+  "iso_code": "UG",
+  "dafif_code": "UG"
+ },
+ {
+  "Country_Name": "United Kingdom",
+  "iso_code": "GB",
+  "dafif_code": "UK"
+ },
+ {
+  "Country_Name": "Ukraine",
+  "iso_code": "UA",
+  "dafif_code": "UP"
+ },
+ {
+  "Country_Name": "United States",
+  "iso_code": "US",
+  "dafif_code": "US"
+ },
+ {
+  "Country_Name": "Burkina Faso",
+  "iso_code": "BF",
+  "dafif_code": "UV"
+ },
+ {
+  "Country_Name": "Uruguay",
+  "iso_code": "UY",
+  "dafif_code": "UY"
+ },
+ {
+  "Country_Name": "Uzbekistan",
+  "iso_code": "UZ",
+  "dafif_code": "UZ"
+ },
+ {
+  "Country_Name": "St. Vincent and the Grenadines",
+  "iso_code": "VC",
+  "dafif_code": "VC"
+ },
+ {
+  "Country_Name": "Venezuela",
+  "iso_code": "VE",
+  "dafif_code": "VE"
+ },
+ {
+  "Country_Name": "British Virgin Islands",
+  "iso_code": "VG",
+  "dafif_code": "VI"
+ },
+ {
+  "Country_Name": "Vietnam",
+  "iso_code": "VN",
+  "dafif_code": "VM"
+ },
+ {
+  "Country_Name": "United States Virgin Islands",
+  "iso_code": "VI",
+  "dafif_code": "VQ"
+ },
+ {
+  "Country_Name": "Namibia",
+  "iso_code": "NA",
+  "dafif_code": "WA"
+ },
+ {
+  "Country_Name": "Palestine",
+  "iso_code": "PS",
+  "dafif_code": "WE"
+ },
+ {
+  "Country_Name": "Wallis and Futuna Islands",
+  "iso_code": "WF",
+  "dafif_code": "WF"
+ },
+ {
+  "Country_Name": "Western Sahara",
+  "iso_code": "EH",
+  "dafif_code": "WI"
+ },
+ {
+  "Country_Name": "Wake Island",
+  "iso_code": "\\N",
+  "dafif_code": "WQ"
+ },
+ {
+  "Country_Name": "Samoa",
+  "iso_code": "WS",
+  "dafif_code": "WS"
+ },
+ {
+  "Country_Name": "Eswatini",
+  "iso_code": "SZ",
+  "dafif_code": "WZ"
+ },
+ {
+  "Country_Name": "Yemen",
+  "iso_code": "YE",
+  "dafif_code": "YM"
+ },
+ {
+  "Country_Name": "Zambia",
+  "iso_code": "ZM",
+  "dafif_code": "ZA"
+ },
+ {
+  "Country_Name": "Zimbabwe",
+  "iso_code": "ZW",
+  "dafif_code": "ZI"
+ }
+]
