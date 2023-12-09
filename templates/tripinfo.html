@@ -36,9 +36,14 @@
                 <tbody>
                     {% for trip in trips %}
                         <tr>
-                          <td>{{trip.Source_Airport}}</td>
-                          <td>{{trip.Destination_Airport}}</td>
-                          <td>{{trip.AirlineID}}</td>
+                          <td>{{trip.SourceCountry}}</td>
+                          <td>{{trip.SourceCity}}</td>
+                          <td>{{trip.SourceAirport}}</td>
+                          <td>{{trip.DestinationCountry}}</td>
+                          <td>{{trip.DestinationCity}}</td>
+                          <td>{{trip.DestinationAirport}}</td>
+                          <td>{{trip.AirlineName}}</td>
+                          <td>{{trip.Stops}}</td>
                         </tr>
                     {% endfor %}
                 </tbody>

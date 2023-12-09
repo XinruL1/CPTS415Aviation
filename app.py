@@ -122,60 +122,140 @@ def search_trip():
   airline_name = request.args.get('airline-name')
   stops = request.args.get('stops')
 
-  pipline = [
-    {
-      "$lookup": {
+  query = {
+    "SourceCountry": source_country,
+    "SourceCity": source_city,
+    "SourceAirport": source_airport,
+    "DestinationCountry": destination_country,
+    "DestinationCity": destination_city,
+    "DestinationAirport": destination_airport,
+    "AirlineName": airline_name,
+    "Stops": stops
+  }
+
+  #drop keys with empty values
+  query = {key: value for key, value in query.items() if value}
+
+  pipeline = [
+    
+    {"$lookup": {
         "from": "Airports",
         "localField": "Source_AirportID",
         "foreignField": "AirportID",
-        "as": "source_airport_info"
-      }
-    },
-    {
-      "$unwind": "$source_airport_info"
-    },
-    {
-      "$lookup": {
+        "as": "sourceAirport"
+    }},
+    {"$lookup": {
         "from": "Airports",
         "localField": "Destination_AirportID",
         "foreignField": "AirportID",
-        "as": "destination_airport_info"
-      }
-    },
-    {
-      "$unwind":"$destination_airport_info"
-    },
-    {
-      "$lookup": {
+        "as": "destinationAirport"
+    }},
+    {"$lookup": {
         "from": "Airlines",
         "localField": "AirlineID",
         "foreignField": "AirlineID",
-        "as": "airline_info"
-      }
-    },
-    {
-      "$unwind": "$airline_info"
-    },
-    {
-      "$project":{
-        "SourceAirportCountry": "$source_airport_info.Country",
-        "SourceAirportCity": "$source_airport_info.city",
-        "SourceAirportName": "$source_airport_info.Name",
-        "DestinationAirportCountry": "$destination_airport_info.Country",
-        "DestinationAirportCity": "$destination_airport_info.City",
-        "DestinationAirportName": "$destination_airport_info.Name",
-        "AirlineName": "$airline_info.Name"
-      }
-    },
-    {
-      "$match": {
-        "Stops":stops
-      }
-    }
+        "as": "airline"
+    }},
+    {"$unwind": "$sourceAirport"},
+    {"$unwind": "$destinationAirport"},
+    {"$unwind": "$airline"},
+    {"$project": {
+        "SourceCountry": "$sourceAirport.Country",
+        "SourceCity": "$sourceAirport.City",
+        "SourceAirport": "$sourceAirport.Name",
+        "DestinationCountry": "$destinationAirport.Country",
+        "DestinationCity": "$destinationAirport.City",
+        "DestinationAirport": "$destinationAirport.Name",
+        "AirlineName": "$airline.Name",
+        "Stops": "$Stops"
+    }},
+    {"$match": query}
   ]
-  routes_data = list(routes_collection.aggregate(pipline))
 
-  return render_template('tripinfo.html',trips = routes)
+  # Execute the aggregation pipeline
+  routes_data = list(db.routes.aggregate(pipeline))
+
+  return render_template('tripinfo.html',trips = routes_data)
+
+"""
+  # emits key-value pairs based on specific fields from the documents in the routes collection,
+  # where '_id' is the key of each document, and the value is an object containing 'sourceAirportID', 'destinationAirportID', 'airlineID', and 'stops'.
+  # using triple quotes to embed JavaScript code directly into the python code
+  mapper = '''
+    function () {
+
+      emit(this._id, {
+        // assigning the value of source_airportID from the document to the key sourceAirportID in the emitted object
+        sourceAirportID : this.Source_AirportID,
+        destinationAirportID : this.Destination_AirportID,
+        airlineID : this.AirlineID,
+        stops : this.Stops
+
+      });
+    }
+  '''
+
+  # aggregating values associated with a specific key emitted by the mapper
+  reducer = '''
+    function(key, values){
+      var result = {
+        SourceCountry: null,
+        SourceCity: null,
+        SourceAirport: null,
+        DestinationCountry: null,
+        DestinationCity: null,
+        DestinationAirport: null,
+        AirlineName: null,
+        Stops: null
+      };
+
+      values.forEach(function (value) {
+        // retrieve airport and airline infoprmation based on IDs
+        var sourceAirport = scope.Airports.findOne({ AirportID: value.sourceAirportID });
+        var destinationAirport = scope.Airports.findOne({ AirportID: value.destinationAirportID });
+        var airline = scope.Airlines.findOne({ AirlineID: value.airlineID});
+
+        // if all three entities exist in their respective collections, 
+        // then valid information is retrieved from the database for the associated IDs
+        if (sourceAirport && destinationAirport && airline){
+          // check conditions based on user input
+          if (
+            (!source_country || sourceAirport.Country === source_country) &&
+            (!source_city || sourceAirport.City === source_city) &&
+            (!source_airport || sourceAirport.Name === source_airport) &&
+            (!destination_country || destinationAirport.Country === destination_country) &&
+            (!destination_city || destinationAirport.City === destination_city) &&
+            (!destination_airport || destinationAirport.Name === destination_airport) &&
+            (!airline_name || airline.Name === airline_name) &&
+            (!stops || value.stops === stops)
+          ) {
+            result.SourceCountry = sourceAirport.Country;
+            result.SourceCity = sourceAirport.City;
+            result.SourceAirport = sourceAirport.Name;
+            result.DestinationCountry = destinationAirport.Country;
+            result.DestinationCity = destinationAirport.City;
+            result.DestinationAirport = destinationAirport.Name;
+            result.AirlineName = airline.Name;
+            result.Stops = value.stops;
+          }
+        }
+      });
+      return result;
+    }
+  '''
+
+  # Define the scope
+  scope = {
+    'Airports': db.Airports,
+    'Airlines': db.Airlines
+  }
+
+  # Run the map-reduce operation with the scope parameter
+  result = db.routes.mapReduce(mapper, reducer, "trip_collection", scope=scope)
+
+  # Retrieve the results from the "trip_collection"
+  routes_data = list(db.trip_collection.find())
+"""
 
 if __name__ == "__main__":
     app.run(host='0.0.0.0', debug=True)
