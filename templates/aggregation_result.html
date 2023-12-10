@@ -23,14 +23,14 @@
         <table>
             <thead>
                 <tr>
-                    <th>Country</th>
+                    <th>Country/City</th>
                     <th>Count</th>
                 </tr>
             </thead>
             <tbody>
                 {% for item in result %}
                     <tr>
-                        <td>{{ item._id}}</td>
+                        <td>{% if item['_id']%}{{ item._id}}{% else %}Not Specified{%endif%}</td>
                         <td>{{ item.count}}</td>
                     </tr>
                 {% endfor %}

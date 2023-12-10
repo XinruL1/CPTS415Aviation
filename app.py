@@ -91,7 +91,7 @@ def top_countries_airports():
             }
         },
         { '$sort': { 'count': -1 } },
-        { '$limit': 5 }
+        { '$limit': 10 }
     ]
 
     result = list(airports_collection.aggregate(pipeline, maxTimeMS=60000, allowDiskUse=True))
@@ -107,12 +107,18 @@ def cities_most_airlines():
             }
         },
         { '$sort': { 'count': -1 } },
-        { '$limit': 5 }
+        { '$limit': 11 }
     ]
+
+    pipeline.append({
+        '$match': {
+            '_id': {'$ne': None}
+        }
+    })
 
     result = list(airports_collection.aggregate(pipeline, maxTimeMS=60000, allowDiskUse=True))
     return render_template('aggregation_result.html', result=result, title='Cities with the most incoming/outgoing airlines')
-
+    
 @app.route('/search_trip', methods=["GET","POST"])
 def search_trip():
   source_country = request.args.get('source-country')
